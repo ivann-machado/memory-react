@@ -47,7 +47,7 @@ function GameBoard({ deck, moves, matches, totalPairs, onCardClick, onReset }: G
 				</div>
 
 				<div className="gameboard__actions">
-					<Button label="New Game" onClick={onReset} variant="primary" />
+					<Button label="Reset" onClick={onReset} variant="primary" />
 				</div>
 			</header>
 
