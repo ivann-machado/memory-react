@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+.gameboard {
+	width: 100%;
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 1.5rem 2.5rem 3rem;
+	font-family: 'Inter', sans-serif;
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	min-height: 0;
+}
+
+.gameboard__header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 1rem;
+	margin-bottom: 2rem;
+}
+
+.gameboard__stats {
+	display: flex;
+	gap: 1rem;
+}
+
+.stat {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0.6rem 1.4rem;
+	background: rgba(255, 255, 255, 0.05);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 14px;
+	min-width: 80px;
+	backdrop-filter: blur(6px);
+	transition: background 0.2s;
+}
+
+.stat--accent {
+	border-color: rgba(167, 139, 250, 0.4);
+	background: rgba(167, 139, 250, 0.08);
+}
+
+.stat__value {
+	font-size: 1.6rem;
+	font-weight: 700;
+	color: #fff;
+	line-height: 1.1;
+}
+
+.stat__total {
+	font-size: 0.8em;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 0.45);
+}
+
+.stat__label {
+	font-size: 0.7rem;
+	font-weight: 500;
+	color: rgba(255, 255, 255, 0.45);
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+	margin-top: 0.15rem;
+}
+
+.gameboard__grid {
+	display: grid;
+	gap: 1.2rem;
+	justify-items: center;
+	align-items: center;
+	flex: 1;
+	min-height: 0;
+	width: 100%;
+}
+
+@media (max-width: 640px) {
+	.gameboard {
+		padding: 1.2rem 1rem 2rem;
+	}
+
+	.gameboard__header {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+}

@@ -1,0 +1,13 @@
+.game-title {
+	font-size: 2.2rem;
+	font-weight: 800;
+	letter-spacing: -0.02em;
+	margin: 0;
+	background: linear-gradient(135deg, #a78bfa, #f0abfc);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	display: flex;
+	align-items: center;
+	gap: 0.4em;
+}
